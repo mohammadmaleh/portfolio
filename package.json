@@ -1,9 +1,9 @@
 {
-  "name": "redux-simple-starter",
+  "name": "portofilo",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "react portofilo for developers ",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "https://github.com/mohammadmaleh/portfolio.git",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server --hot",
     "webpack": "webpack",
@@ -16,7 +16,7 @@
     "prod:debug": "npm run debug -- --env.mode production"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
