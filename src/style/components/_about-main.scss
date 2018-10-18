@@ -1,0 +1,44 @@
+#about-main{
+  margin-top: 15rem;
+  .personal-information{
+    background-color: rgba($color-grey-light-1,.4);
+    height: 100%;
+    border: $border-frosty;
+    border-radius: .3rem;
+    padding: 2rem;
+    @include box-shadow(0,1rem ,2rem ,rgba($color-black, .3));
+    display: flex;
+    color: #353535;
+    font-size: 1.5rem;
+    text-shadow: $color-frosty 1px 1px 1px;
+
+    .my-image{
+      border: .1rem $border-frosty solid;
+      height: 10rem;
+      width: 10rem;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      border-radius: 150px;
+      -webkit-box-shadow: .3px .2rem .8rem  rgba($color-black,.3);
+      -moz-box-shadow: 0px .2rem .8rem  rgba($color-black,.3);
+      box-shadow: 0px .3rem .8rem  rgba($color-black,.3);
+      background: $color-white url("../../assets/images/myphoto.jpg") center;
+      background-size: contain;
+
+    }
+  }
+
+}
+.roundHex {
+
+
+
+}
+.roundHex:before,
+.roundHex:after {
+
+}
+.roundHex:before {
+}
+.roundHex:after {
+}

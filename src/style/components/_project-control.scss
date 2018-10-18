@@ -1,0 +1,50 @@
+.projects-control{
+  margin-bottom: 2rem;
+  ul{
+    display: flex;
+    @include justify-content(flex-start);
+    @include align-items(center);
+    @include flex-direction(row);
+    width: 100%;
+    border-bottom: .1rem solid $color-grey-light-2 ;
+    border-radius: 3px;
+
+    li{
+      height: 100%;
+      list-style: none;
+      margin-right: 2rem;
+      padding: 0 1rem;
+      border-bottom: .1rem  solid transparent;
+
+      @include transition(all .3s ease);
+
+      &:hover{
+        border-color: $color-primary-light;
+      p{
+        color: $color-primary-light;
+
+      }
+      }
+      &.active{
+        border-color: $color-primary-dark;
+        p{
+          color: $color-primary-dark;
+
+        }
+      }
+      p{
+        @include transition(all .3s ease);
+
+        margin: 0;
+        font-size: 2rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        color:$color-black;
+
+      }
+
+    }
+
+  }
+}
+

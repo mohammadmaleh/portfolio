@@ -1,0 +1,8 @@
+.animate-right{
+  animation: moveInLeft .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+.animate-left{
+  animation: moveInRight .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}

@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/modal";
+@import "abstracts/variables";
+@import "abstracts/utilities";
+@import "components/progress";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "abstracts/mixins";
+@import "components/button";
+@import "components/bg-video";
+@import "components/project";
+@import "components/about-main";
+@import "components/card";
+@import "components/skill-rate";
+@import "components/project-control";
+@import "components/modal";
+@import "pages/home";
+@import "layout/header";
+@import "~react-image-gallery/styles/scss/image-gallery";
+#section-header {
+  display: flex;
+  @include align-items(center);
+  @include justify-content(center);
+  padding: 40px 0 80px 0;
+  p {
+    font-size: 40px;
+    border-bottom: 4px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+}
+.section {
+  padding: 50px 0;
+}
