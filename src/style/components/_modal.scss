@@ -1,24 +1,45 @@
 .modal{
   padding: 0 20px;
+  .image-gallery-swipe{
+    min-height: 35rem;
+  }
   .modal-header{
-    h5{
-      width: 100%;
-      a{
-        color: $color-primary;
-        font-size: 29px;
-        font-weight: 600;
-        letter-spacing: 1.3px;
+
+
+      h5{
+        display: flex;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
         width: 100%;
-        text-align: center;
-        padding: 5px;
-        text-transform: capitalize;
-        text-decoration: none;
-        display: block;
+        a{
+          color: $color-primary;
+          font-size: 29px;
+          font-weight: 600;
+          letter-spacing: 1.3px;
+          width: 100%;
+          text-align: center;
+          padding: 5px;
+          text-transform: capitalize;
+          text-decoration: none;
+          display: block;
+        }
+        svg{
+          color: $color-primary;
+          font-size: 3rem;
+          font-weight: 600;
+          cursor: pointer;
+          @include transition();
+          &:hover{
+            transform: scaleY(-3px);
+          }
+        }
       }
-    }
+
 
   }
   .project-description{
+    padding: 0 1.5rem;
     label{
       color: #55c57a;
       text-transform: capitalize;
@@ -27,22 +48,27 @@
       display: block;
     }
     .project-description-fields{
+      margin: 1.5rem 0;
+      .project-description-field{
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $color-grey-light-2;
+        p,a{
+          text-decoration: none;
+          display: block;
+          color: $black;
+          font-size: 1.6rem;
+          font-weight: 300;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
 
-      p,a{
-        text-decoration: none;
-        display: block;
-        color: $black;
-        font-size: 16px;
-        font-weight: 300;
-        margin-bottom:10px;
-        &:last-of-type{
-          margin-bottom: 0;
+
         }
-
-
       }
+
     }
     .stack{
+      margin-top: 3rem;
       .stack-container{
         width: 100%;
         padding: 1rem;
@@ -79,7 +105,9 @@
       }
     }
     .highlights{
+      padding: 15px 0 ;
       .highlight{
+        padding: 10px;
         color: $black;
         font-size: 16px;
         font-weight: 300;
@@ -93,6 +121,19 @@
           margin-right: .5rem;
           background-color: $color-primary;
         }
+      }
+    }
+  }
+  .modal-footer-control{
+    width: 100%;
+    display: flex;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding: 0px;
+    .green{
+      &:first-of-type{
+        margin-right: 2rem;
       }
     }
   }

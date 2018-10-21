@@ -9,8 +9,13 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowCircleRight,
+  faArrowCircleLeft
+} from "@fortawesome/free-solid-svg-icons";
 const ProjectModal = props => {
-  let { modal, toggleModal, project } = props;
+  let { modal, toggleModal, project, nextProject, prevProject } = props;
   const images = [
     {
       original: "http://lorempixel.com/1000/600/nature/1/",
@@ -42,33 +47,65 @@ const ProjectModal = props => {
       {project ? (
         <Modal isOpen={modal} toggle={toggleModal} size={"lg"}>
           <ModalHeader>
+            <FontAwesomeIcon
+              icon={faArrowCircleLeft}
+              onClick={() => {
+                prevProject(project.id);
+              }}
+            />
+
             <a href={project.link ? project.link : "#"}>{project.title}</a>
+            <FontAwesomeIcon
+              icon={faArrowCircleRight}
+              onClick={() => {
+                nextProject(project.id);
+              }}
+            />
           </ModalHeader>
+
           <ModalBody>
-            <ImageGallery items={sliderImages} />
+            <ImageGallery
+              items={sliderImages}
+              showThumbnails={false}
+              autoPlay={true}
+              slideInterval={2000}
+              infinite={true}
+            />
             <div className={"project-description"}>
               <Row>
                 <Col md={6} sm={12} xs={12} lg={6} xl={6}>
                   <div className={"project-description-fields"}>
-                    <Row>
-                      <Col>
-                        {" "}
-                        <label>Name</label>
-                        <a href={project.link ? project.link : "#"}>
-                          {project.title}
-                        </a>
-                      </Col>
-                      <Col>
-                        {" "}
-                        <label>Year</label>
-                        <p>{project.year}</p>
-                      </Col>
-                    </Row>
-
-                    <label>Employer</label>
-                    <p>{project.company}</p>
-                    <label>descriptopm</label>
-                    <p>{project.description}</p>
+                    <div className={"project-description-field"}>
+                      <Row>
+                        <Col>
+                          <label>Name</label>
+                          <a href={project.link ? project.link : "#"}>
+                            {project.title}
+                          </a>
+                        </Col>
+                        <Col>
+                          <label>Year</label>
+                          <p>{project.year}</p>
+                        </Col>
+                      </Row>
+                    </div>
+                    <div className={"project-description-field"}>
+                      <Row>
+                        <Col>
+                          {" "}
+                          <label>Employer</label>
+                          <p>{project.company}</p>
+                        </Col>
+                      </Row>
+                    </div>
+                    <div className={"project-description-field"}>
+                      <Row>
+                        <Col>
+                          <label>descriptopm</label>
+                          <p>{project.description}</p>
+                        </Col>
+                      </Row>
+                    </div>
                   </div>
                 </Col>
                 <Col md={6} sm={12} xs={12} lg={6} xl={6}>
@@ -95,9 +132,31 @@ const ProjectModal = props => {
             </div>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={toggleModal}>
-              Back
-            </Button>
+            <div className="modal-footer-control">
+              <div>
+                <Button className={"red"} onClick={toggleModal}>
+                  Hide
+                </Button>
+              </div>
+              <div>
+                <Button
+                  className={"green"}
+                  onClick={() => {
+                    prevProject(project.id);
+                  }}
+                >
+                  Prev Project
+                </Button>
+                <Button
+                  className={"green"}
+                  onClick={() => {
+                    nextProject(project.id);
+                  }}
+                >
+                  Next Project
+                </Button>
+              </div>
+            </div>
           </ModalFooter>
         </Modal>
       ) : (

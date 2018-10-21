@@ -123,7 +123,7 @@ export class Header extends Component {
             Hello, I'm <span>Mohammad Maleh</span>
           </p>
           <p className="animate-left">I'm a Frontend Developer</p>
-          <a className={"btn btn--green btn--animated"}>View my work</a>
+          <a className={"btn green btn--animated"}>View my work</a>
         </div>
       </div>
     );

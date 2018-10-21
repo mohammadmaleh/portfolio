@@ -87,7 +87,15 @@ const projectsList = [
       "Kambo is a financial service that provides loans backed with crypto-assets (BTC and ETH)",
     stack: ["AngularJs", "HTML5", "JQuery", "Sass", "Webpack"],
     id: 2,
-    link: "https://kambo.io"
+    link: "https://kambo.io",
+      highlights: [
+          "dsakdsk ajndj ksandj a ksnd sad  jkdsadadas asd saajndj ksandj a ksnd sad  jkdsadadas asd sa",
+          "dsakdsk ajndj ksandj a ksnd sad  jkdsadadas asd saajndj ksandj a ksnd sad  jkdsadadas asd sa",
+          "dsakdsk ajndj ksandj a ksnd sad  jkdsadadas asd saajndj ksandj a ksnd sad  jkdsadadas asd sa",
+          "dsakdsk ajndj ksandj a ksnd sad  jkdsadadas asd saajndj ksandj a ksnd sad  jkdsadadas asd sa",
+          "dsakdsk ajndj ksandj a ksnd sad  jkdsadadas asd saajndj ksandj a ksnd sad  jkdsadadas asd sa"
+      ]
+
   },
   {
     type: "others",

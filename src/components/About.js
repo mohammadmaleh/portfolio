@@ -1,7 +1,6 @@
 import AboutFeatures from "./AboutFeatures";
 import React from "react";
 import AboutMain from "./AboutMain";
-import SectionHeader from "./SectionHeader";
 import bgVideo from "../assets/videos/bgVideo.mp4";
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
           <source src={bgVideo} type="video/webm" />
         </video>
       </div>
-      <SectionHeader title="about" />
+      <h3 className={"section-header"}>about</h3>
       <AboutFeatures />
       <AboutMain />
     </section>

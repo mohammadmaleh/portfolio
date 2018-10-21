@@ -7,6 +7,7 @@ import "../style/style.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
+import Contacts from "./Contacts";
 
 library.add(faStroopwafel);
 export default class App extends Component {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Header />
         <About />
         <Projects />
+        <Contacts />
       </div>
     );
   }

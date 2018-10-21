@@ -28,9 +28,9 @@ const AboutMain = () => {
           </div>
         </Col>
         <Col className="stats" sm={12} lg={6} xs={12}>
-          <SkillRate name={"css"} rate={80} />
-          <SkillRate name={"css"} rate={50} />
-          <SkillRate name={"css"} rate={20} />
+          <SkillRate name={"Javascript"} rate={80} color={"green"} />
+          <SkillRate name={"css"} rate={50} color={"orange"} />
+          <SkillRate name={"ReactJS"} rate={20} color={"blue"} />
           {/*<SkillRate name={'css'} rate={80}/>*/}
           {/*<SkillRate name={'css'} rate={80}/>*/}
           {/*<SkillRate name={'css'} rate={80}/>*/}

@@ -6,13 +6,17 @@ class Project extends Component {
     let activeModal = this.props.activeModal;
     return (
       <div
-        className="project glass"
+        className="project"
         onClick={() => {
           activeModal(id);
         }}
       >
-        <img className={"icon"} src={icon} alt="" />
-        <p className="title">{title}</p>
+        <div className="image-container">
+          <img className={"icon"} src={icon} alt="" />
+        </div>
+        <div className={"title-container"}>
+          <p className="title">{title}</p>
+        </div>
       </div>
     );
   }

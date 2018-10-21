@@ -10,7 +10,7 @@ const About = () => {
           <source src={bgVideo} type="video/webm" />
         </video>
       </div>
-      <SectionHeader title="about" />
+      <h3 className={"section-header"}>about</h3>
       <AboutFeatures />
       <AboutMain />
     </section>
