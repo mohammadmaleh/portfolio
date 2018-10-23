@@ -14,7 +14,7 @@
     "dev": "npm run webpack-dev-server -- --env.mode development --open --watch",
     "dev:debug": "npm run debug -- --env.mode development",
     "prod": "npm run webpack -- --env.mode production",
-    "start": "npm run webpack -- --env.mode production",
+    "start": "node server.js",
     "prod:analyze": "npm run prod  -- --env.presets analyze",
     "prod:compress": "npm run prod  -- --env.presets compress",
     "prod:debug": "npm run debug -- --env.mode production"
