@@ -4,6 +4,9 @@
   "description": "react portofilo for developers ",
   "main": "index.js",
   "repository": "https://github.com/mohammadmaleh/portfolio.git",
+  "engines": {
+    "node": "8.11.3"
+  },
   "scripts": {
     "webpack-dev-server": "webpack-dev-server --hot",
     "webpack": "webpack",
