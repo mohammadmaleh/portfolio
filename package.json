@@ -18,7 +18,8 @@
     "prod": "npm run webpack -- --env.mode production",
     "prod:analyze": "npm run prod  -- --env.presets analyze",
     "prod:compress": "npm run prod  -- --env.presets compress",
-    "prod:debug": "npm run debug -- --env.mode production"
+    "prod:debug": "npm run debug -- --env.mode production",
+    "start": "node server.js"
   },
   "author": "Mohammad maleh <mohammad.maleh@gmail.com>",
   "license": "MIT",
