@@ -5,7 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/mohammadmaleh/portfolio.git",
   "engines": {
-    "node": "8.11.3"
+    "npm": "5.7.1",
+    "node": "9.5.0",
+    "yarn":"1.10.1"
   },
   "scripts": {
     "webpack-dev-server": "webpack-dev-server --hot",
@@ -14,7 +16,6 @@
     "dev": "npm run webpack-dev-server -- --env.mode development --open --watch",
     "dev:debug": "npm run debug -- --env.mode development",
     "prod": "npm run webpack -- --env.mode production",
-    "start": "node server.js",
     "prod:analyze": "npm run prod  -- --env.presets analyze",
     "prod:compress": "npm run prod  -- --env.presets compress",
     "prod:debug": "npm run debug -- --env.mode production"
