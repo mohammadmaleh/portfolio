@@ -68,16 +68,16 @@
         color: $color-white;
       }
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: $color-linear-orange;
       }
       &-2 {
-        background-image: linear-gradient(to right bottom, $color-light-red, $color-dark-red);
+        background-image: $color-linear-red;
       }
       &-3 {
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        background-image: $color-linear-green;
       }
       &-4{
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        background-image: $color-linear-blue;
       }
     }
   }
@@ -103,17 +103,17 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+      background-image: $color-linear-orange,
       //url(../img/nat-5.jpg);
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+      background-image: $color-linear-green,
       //url(../img/nat-6.jpg);
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+      background-image: $color-linear-blue,
       //url(../img/nat-7.jpg);
     }
   }
@@ -137,21 +137,15 @@
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(to right bottom,
-              rgba($color-secondary-light, .85),
-              rgba($color-secondary-dark, .85));
+      background-image: $color-linear-orange;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom,
-              rgba($color-primary-light, .85),
-              rgba($color-primary-dark, .85));
+      background-image: $color-linear-green;
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom,
-              rgba($color-tertiary-light, .85),
-              rgba($color-tertiary-dark, .85));
+      background-image: $color-linear-blue;
     }
   }
 

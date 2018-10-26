@@ -2,12 +2,21 @@
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+$color-linear-green:linear-gradient(to right bottom,
+        rgba($color-primary-light, .85),
+        rgba($color-primary-dark, .85));
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
+$color-linear-orange :linear-gradient(to right bottom,
+        rgba($color-secondary-light, .85),
+        rgba($color-secondary-dark, .85));
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
+$color-linear-blue:linear-gradient(to right bottom,
+        rgba($color-tertiary-light, .85),
+        rgba($color-tertiary-dark, .85));
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -18,9 +27,11 @@ $color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
+$color-linear-black : linear-gradient(to right bottom, $black, lighten($color-black,30));
 
 $color-light-red :#ff6348;
 $color-dark-red:#ff4757;
+$color-linear-red :linear-gradient(to right bottom, $color-light-red, $color-dark-red);
 $color-very-light-green: #b8e994;
 $color-frosty :  rgba(#fff, .3);
 $border-frosty:1px solid rgba(255, 245, 245, 0.21);
