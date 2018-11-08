@@ -117,6 +117,7 @@ export class Header extends Component {
     return (
       <div id="header">
         <Particles params={ParticlesConfig} />
+          <div className="test"></div>
 
         <div className="main">
           <p className="animate-right">

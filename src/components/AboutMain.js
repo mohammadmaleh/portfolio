@@ -14,13 +14,17 @@ const AboutMain = () => {
               </Col>
               <Col sm={12} lg={9} xs={12}>
                 <div className="description">
-                  <p className="title">Who's this guy?</p>
-                  <p className="description">
-                    I'm the Front-End Developsdasdasdaser asdasdasdfor EyeCue
-                    Lab in Portland, OR. I hsdasdasdasave serdsadasdious
-                    passidsadsadon for UI effects, animations ansdasd creating
-                    intuitive, dynamic user experiences.{" "}
-                  </p>
+                  <p className="title">Mohammad Maleh</p>
+                    <br/>
+                  <p className="description">I’m a <span>frontend developer</span> originally from Syria.
+                      <br/><br/>
+                      Currently living in <span>Istanbul-Turkey</span> And working for one of the most successful financial companies in Turkey <a
+                          href="http://www.gk-group.com" target={'self'}>Global Capital</a>.
+                      <br/><br/>
+
+                      I enjoy Building Web Applications and learning new technologies .
+                      <br/><br/>
+                      I try to use my knowledge and my +4 years of experience building frontend applications , to find solutions for my employers to help them meeting there needs,  and  produce the the best quality frontend applications possible.</p>
                 </div>
               </Col>
             </Row>
@@ -28,15 +32,17 @@ const AboutMain = () => {
           </div>
         </Col>
         <Col className="stats" sm={12} lg={6} xs={12}>
-          <SkillRate name={"Javascript"} rate={80} color={"green"} />
-          <SkillRate name={"css"} rate={50} color={"orange"} />
-          <SkillRate name={"ReactJS"} rate={20} color={"blue"} />
-          {/*<SkillRate name={'css'} rate={80}/>*/}
-          {/*<SkillRate name={'css'} rate={80}/>*/}
-          {/*<SkillRate name={'css'} rate={80}/>*/}
-          {/*<SkillRate name={'css'} rate={80}/>*/}
-          {/*<SkillRate name={'css'} rate={80}/>*/}
-          {/*<SkillRate name={'css'} rate={80}/>*/}
+          <SkillRate name={"JavaScript"} rate={80} color={"yellow"} />
+          <SkillRate name={"ReactJS"} rate={65} color={"yellow"} />
+          <SkillRate name={"AngularJS"} rate={70} color={"yellow"} />
+            <SkillRate name={"HTML"} rate={80} color={"green"} />
+            <SkillRate name={"CSS"} rate={80} color={"red"} />
+          <SkillRate name={"Sass"} rate={80} color={"red"} />
+          <SkillRate name={"Less"} rate={80} color={"red"} />
+          <SkillRate name={"Webpack"} rate={70} color={"blue"} />
+            <SkillRate name={"Git"} rate={50} color={"blue"} />
+
+            <SkillRate name={"ExpressJS"} rate={40} color={"blue"} />
         </Col>
       </Row>
     </Container>

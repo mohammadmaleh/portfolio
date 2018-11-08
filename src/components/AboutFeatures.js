@@ -26,10 +26,11 @@ const AboutFeatures = () => {
 
               <div className="card-side card-side-back card-side-back-1">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam aperiam autem consequatur deleniti distinctio est
-                  facere harum nemo neque nobis odit quae, quis repudiandae sed
-                  soluta tempora tenetur vitae voluptates!
+                    I believe performance is the most important aspect of web development.
+                    <br/><br/>
+                    I use methods like Minifying ,image optimisation , code splitting , bundling and chunks.
+                    <br/><br/>
+                    Using building tools like Webpack and Gulp
                 </p>
               </div>
             </div>
@@ -46,12 +47,11 @@ const AboutFeatures = () => {
               </div>
 
               <div className="card-side card-side-back card-side-back-2">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam aperiam autem consequatur deleniti distinctio est
-                  facere harum nemo neque nobis odit quae, quis repudiandae sed
-                  soluta tempora tenetur vitae voluptates!
-                </p>
+                <p>Art is one one of my main interests.
+                    <br/><br/>
+                    and developing beautiful, complex , responsive designs simply makes me proud !
+                    <br/><br/>
+                    I use Post-css preprocessors like Sass and Less with new CSS technologies like flex-box.</p>
               </div>
             </div>
           </Col>
@@ -67,12 +67,11 @@ const AboutFeatures = () => {
               </div>
 
               <div className="card-side card-side-back card-side-back-3">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam aperiam autem consequatur deleniti distinctio est
-                  facere harum nemo neque nobis odit quae, quis repudiandae sed
-                  soluta tempora tenetur vitae voluptates!
-                </p>
+                <p> “The Devil in the details”
+                    <br/><br/>
+                    Minor details and carelessness can cause huge problems for business and makes it harder to maintain the application
+                    <br/><br/>
+                    to make sure my applications runs as expected, I try my best to apply test cases and linting while developing </p>
               </div>
             </div>
           </Col>
@@ -88,11 +87,11 @@ const AboutFeatures = () => {
               </div>
 
               <div className="card-side card-side-back card-side-back-4">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam aperiam autem consequatur deleniti distinctio est
-                  facere harum nemo neque nobis odit quae, quis repudiandae sed
-                  soluta tempora tenetur vitae voluptates!
+                <p> I try to keep up with all frontend trends,  like ReactJS , Webpack , Sass.
+                    <br/><br/>
+                    To keep self growth , and get the most advanced features with the technologies I use
+                    <br/><br/>
+
                 </p>
               </div>
             </div>

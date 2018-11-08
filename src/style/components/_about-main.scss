@@ -1,7 +1,7 @@
 #about-main{
   margin-top: 15rem;
   .personal-information{
-    background-color: rgba($color-grey-light-1,.4);
+    background-color: rgba($color-grey-light-1,.7);
     height: 100%;
     border: $border-frosty;
     border-radius: .3rem;
@@ -25,6 +25,26 @@
       background: $color-white url("../../assets/images/myphoto.jpg") center;
       background-size: contain;
 
+    }
+    .title{
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .description{
+      font-size: 14px;
+      font-weight: 400;
+      span{
+        font-size: 16px;
+
+        font-weight: 500;
+      }
+      a{
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-primary;
+        text-decoration: none;
+
+      }
     }
   }
 

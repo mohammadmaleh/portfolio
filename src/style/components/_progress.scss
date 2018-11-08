@@ -50,7 +50,13 @@
   }
   &.red{
     span{
-      background: linear-gradient( to right , $color-tertiary-light, $color-tertiary-dark );
+      background: linear-gradient( to right , $color-light-red, $color-dark-red );
+
+    }
+  }
+  &.yellow{
+    span{
+      background: linear-gradient( to right , $color-yellow-light, $color-yellow-dark );
 
     }
   }
